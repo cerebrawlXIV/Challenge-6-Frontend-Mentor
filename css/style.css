@@ -1,0 +1,272 @@
+/* PRIMARY COLOR */
+/* SECONDARY COLOR */
+/* FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Space+Mono:wght@400;700&display=swap");
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+
+body {
+  line-height: 1;
+}
+
+ol, ul {
+  list-style: none;
+}
+
+blockquote, q {
+  quotes: none;
+}
+
+blockquote:before, blockquote:after,
+q:before, q:after {
+  content: "";
+  content: none;
+}
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Space mono";
+}
+
+body {
+  background-color: #c5e4e7;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 1.6em;
+  letter-spacing: 9px;
+  line-height: 35px;
+  color: #3f6264;
+  width: 150px;
+  text-align: center;
+  margin: 40px auto;
+}
+
+main {
+  background-color: white;
+  padding: 35px 10px;
+  border-radius: 30px 30px 0px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main #information {
+  width: 88%;
+}
+main #information > div {
+  margin-bottom: 35px;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+main #information > div .error-message {
+  position: absolute;
+  right: 0px;
+  color: #b67b6d;
+  display: none;
+}
+main #information > div .input-icon {
+  position: relative;
+}
+main #information > div .input-icon i {
+  position: absolute;
+  top: 10px;
+  left: 20px;
+  font-size: 1.5em;
+  color: #91b8ba;
+}
+main #information > div .input-icon .fa-user {
+  top: 15px;
+  left: 22px;
+  font-size: 1.1em;
+}
+main #information > div label, main #information > div p {
+  font-weight: bold;
+  font-size: 1.02em;
+  margin-bottom: 9px;
+  color: #4f7b7d;
+}
+main #information > div input[type=number] {
+  border: none;
+  background-color: #f0f8f9;
+  height: 46px;
+  width: 100%;
+  border-radius: 4px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.5em;
+  font-family: "Space mono";
+  color: #2b4345;
+}
+main #information > div input[type=number]:focus {
+  outline: none;
+  border: 2px solid #22ab98;
+}
+main #information #tip {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 48px);
+  grid-gap: 16px;
+}
+main #information #tip label {
+  width: 100%;
+  height: 100%;
+  background-color: #00494d;
+  border-radius: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  font-size: 1.5em;
+}
+main #information #tip input[type=radio] {
+  display: none;
+}
+main #information #tip input[type=radio]:checked + label {
+  background-color: #26c0ab;
+}
+main #information #tip #custom {
+  border: none;
+  background-color: #f0f8f9;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  text-align: right;
+  font-weight: 700;
+  font-size: 1.5em;
+  font-family: "Space mono";
+  color: #2b4345;
+}
+main #information #tip #custom:focus {
+  outline: none;
+  border: 2px solid #22ab98;
+}
+main #display {
+  background-color: #00494d;
+  padding: 43px 23px 23px 23px;
+  border-radius: 15px;
+  width: 92%;
+}
+main #display div {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+main #display div p {
+  font-weight: 700;
+}
+main #display div p:first-child {
+  font-size: 1.05em;
+  color: white;
+  line-height: 22px;
+}
+main #display div p:first-child span {
+  font-size: 0.8em;
+  color: #1f9e8d;
+}
+main #display div p:last-child {
+  font-size: 2em;
+  color: #26c0ab;
+}
+main #display button {
+  height: 50px;
+  width: 100%;
+  border: none;
+  border-radius: 4px;
+  background-color: #00666c;
+  color: #00494d;
+  font-weight: 700;
+  font-size: 1.2em;
+}
+
+.attribution {
+  color: #00494d;
+  width: 80%;
+  margin: 10px auto;
+  text-align: center;
+}
+.attribution a {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+.attribution a:last-child {
+  color: #26c0ab;
+}
+
+@media screen and (min-width: 1024px) {
+  main {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 32px;
+    margin: auto;
+    width: 80%;
+    border-radius: 30px;
+  }
+  main #information {
+    width: 48%;
+  }
+  main #information > div #tip {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 48px);
+  }
+  main #information > div:last-child {
+    margin-bottom: 0;
+  }
+  main #display {
+    width: 48%;
+    padding: 40px;
+  }
+  main #display div {
+    margin-bottom: 30px;
+  }
+  main #display div :first-child {
+    margin-top: 20px;
+  }
+  main #display div p:last-child {
+    font-size: 2.9em;
+  }
+  main #display button {
+    margin-top: 90px;
+  }
+}
+@media screen and (min-width: 1400px) {
+  main {
+    width: 60%;
+  }
+}
+
+/*# sourceMappingURL=style.css.map */
