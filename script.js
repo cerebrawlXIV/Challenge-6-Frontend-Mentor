@@ -71,7 +71,7 @@ function calculate(){
         } else if(tipValue == undefined){
             tipAmount = 0;
         }
-        let totalPerPerson = (billValue + tipAmount) / numberValue;
+        let totalPerPerson = Math.round(((billValue + tipAmount) / numberValue) * 100) / 100;
         totalTarget.innerText = `$${totalPerPerson}`;
     }
     /* Reset button background */ 
